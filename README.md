@@ -1,2 +1,1 @@
-# Algorithms
-#algorithm2
+All practice questions
