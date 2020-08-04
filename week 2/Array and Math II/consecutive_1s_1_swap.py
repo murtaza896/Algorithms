@@ -29,7 +29,7 @@ def method1(arr):
     # print(tot_1)
 
     # compute the result max(L+R+1) or max(L+R) based on the availability of extra 1s for swapping
-    length = arr[0]
+    length = -1
     for i in range(1, len(arr)-1):
         L, R = maxL[i-1], maxR[i+1]
         if arr[i] == 0:
@@ -37,7 +37,8 @@ def method1(arr):
                 length = max(length, L+R+1)
             else:
                 length = max(length, L+R)
-    if length == 0:
+    
+    if length == -1:
         print(tot_1)
     else:
         print(length)
