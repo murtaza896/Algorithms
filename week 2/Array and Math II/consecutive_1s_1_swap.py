@@ -24,8 +24,8 @@ def method1(arr):
             maxR[i] = 0
         else:
             maxR[i] = maxR[i+1] + 1
-    # print(maxL)
-    # print(maxR)
+    print(maxL)
+    print(maxR)
     # print(tot_1)
 
     # compute the result max(L+R+1) or max(L+R) based on the availability of extra 1s for swapping
